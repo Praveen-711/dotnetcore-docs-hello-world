@@ -16,19 +16,12 @@ pipeline {
         stage ('build'){
              steps{
 
-                   dotnet build
+                 sh 'dotnet build'
+                 sh 'dotnet publish'
                    
                 
-        }
-    }
-    
-        stage ('publish') {
-            steps {
-                
-                dotnet publish
-                   
-            }
-    } 
+       
     }
 }
-    
+    }
+}
