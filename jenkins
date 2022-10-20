@@ -23,5 +23,10 @@ pipeline {
        
     }
 }
+   stage('artifacts'){
+    steps{
+        archive '/home/ubuntu/remote_root/workspace/dot/bin/Debug/net6.0/publish/'
+    }
+   }
     }
 }
