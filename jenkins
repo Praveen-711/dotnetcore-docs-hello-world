@@ -25,7 +25,7 @@ pipeline {
 }
    stage('artifacts'){
     steps{
-        archiveArtifacts artifacts: '/home/ubuntu/remote_root/workspace/dot/bin/Debug/net6.0/publish/'
+        archiveArtifacts artifacts: '/bin/Debug/net6.0/publish/'
     }
    }
     }
